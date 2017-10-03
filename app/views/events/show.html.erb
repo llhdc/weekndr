@@ -10,18 +10,18 @@
 <% eat = ["Hunger Slayer", "Nom", "Chow", "Munch", "Taste", "Eat Some Food"] %>
 <% art = ["Art Connoisseur", "Artsy", "Fancy"] %>
 
-<section id="option-1">
+<section class="option" id="option-1">
   <span><%= link_to party.shuffle.first, event_path(:type => "night"), class: "span-text" %></span>
 </section>
 
-<section id="option-2">
+<section class="option" id="option-2">
   <span><%= link_to eat.shuffle.first, event_path(:type => "food"), class: "span-text" %></span>
 </section>
 
-<section id="option-3">
+<section class="option" id="option-3">
   <span><%= link_to art.shuffle.first, event_path(:type => "art"), class: "span-text" %></span>
 </section>
 
-<section id="option-4">
+<section class="option" id="option-4">
   <span><%= link_to "Decision Making is Hard", event_path(:type => "null"), class: "span-text" %></span>
 </section>
