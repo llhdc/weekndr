@@ -29,7 +29,7 @@ header {
   color: white;
 }
 
-.banner span, header, option {
+.span-text, .banner, header, option {
   text-shadow:
 		-1px -1px 0 #000,
 		2px -2px 0 #000,
@@ -60,4 +60,11 @@ header {
 .span-text {
   color: white;
   text-decoration: none;
+}
+
+.span-text:hover{
+  padding: 4px;
+  background-color: white;
+  color: black;
+  text-shadow: none;
 }
