@@ -15,9 +15,124 @@
  */
  header {
   color: white;
-  background-image: url(https://source.unsplash.com/collection/135653);
+  background: url(https://source.unsplash.com/collection/135653) no-repeat;
   height: 500px;
   width: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  line-height: 500px;
+  font-size: 100px;
+  margin: 10px;
+  padding: 0;
+  text-shadow:
+		-1px -1px 0 #000,
+		2px -2px 0 #000,
+		-1px 1px 0 #000,
+		2px 2px 0 #000;
  }
+
+
+.banner {
+  border: black 9px solid;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  background: url("https://source.unsplash.com/collection/251966") no-repeat center fixed;
+  background-size: cover
+}
+
+.banner span {
+  height: 200px;
+  width: 100%;
+  font-size: 40px;
+  line-height: 200px;
+  color: white;
+  text-shadow:
+		-1px -1px 0 #000,
+		2px -2px 0 #000,
+		-1px 1px 0 #000,
+		2px 2px 0 #000;
+}
+
+#option-1 {
+  border: black 9px solid;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  background: url("https://source.unsplash.com/collection/472132") no-repeat center fixed;
+  background-size: cover;
+  font-size: 40px;
+  line-height: 200px;
+  color: white;
+  text-shadow:
+		-1px -1px 0 #000,
+		2px -2px 0 #000,
+		-1px 1px 0 #000,
+		2px 2px 0 #000;
+}
+
+#option-2 {
+  border: black 9px solid;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  background: url("https://source.unsplash.com/collection/622216") no-repeat center fixed;
+  background-size: cover;
+  font-size: 40px;
+  line-height: 200px;
+  color: white;
+  text-shadow:
+		-1px -1px 0 #000,
+		2px -2px 0 #000,
+		-1px 1px 0 #000,
+		2px 2px 0 #000;
+}
+
+#option-3 {
+  border: black 9px solid;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  background: url("https://source.unsplash.com/collection/1145164") no-repeat center fixed;
+  background-size: cover;
+  font-size: 40px;
+  line-height: 200px;
+  color: white;
+  text-shadow:
+		-1px -1px 0 #000,
+		2px -2px 0 #000,
+		-1px 1px 0 #000,
+		2px 2px 0 #000;
+}
+
+#option-4 {
+  border: black 9px solid;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  background: url("https://source.unsplash.com/collection/570657") no-repeat center fixed;
+  background-size: cover;
+  font-size: 40px;
+  line-height: 200px;
+  color: white;
+  text-shadow:
+		-1px -1px 0 #000,
+		2px -2px 0 #000,
+		-1px 1px 0 #000,
+		2px 2px 0 #000;
+}
+
+.span-text {
+  color: white;
+  text-decoration: none;
+}

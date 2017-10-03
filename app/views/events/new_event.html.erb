@@ -1,11 +1,11 @@
-<p><%= @venue.name  %></p>
-<p><%= @venue.location["formattedAddress"][0] %></p>
-<p><%= @venue.location["formattedAddress"][1] %></p>
+<p><%= @venue.name %></p>
+<a href="https://maps.google.com/?q=<%= @venue.name %> <%= @venue.location["formattedAddress"][0] %> <%= @venue.location["formattedAddress"][1] %>"><%= @venue.location["formattedAddress"][0] %></a>
+
 <p>Rating: <%= @venue.rating %></p>
 <% if @venue.price %>
   <% cost = "$" * @venue.price["tier"] %>
   <p>Cost: <%= cost %></p>
 <% end %>
-<% if @venue.photourl %>
+<!-- <% if @venue.photourl %>
   <%= image_tag @venue.photourl %>
-<% end %>
+<% end %> -->
