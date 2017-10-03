@@ -3,7 +3,7 @@
 <% party = ["Wildin' Out", "Hang Out Yo", "Party Starter"] %>
 <% eat = ["Hunger Slayer", "Eat Some Food"] %>
 
-<p><%= link_to party.shuffle.first %></p>
+<p><%= link_to party.shuffle.first, event_path(:type => "night") %></p>
 <p><%= link_to eat.shuffle.first %></p>
 <p><%= link_to 'Tourist' %></p>
 <p><%= link_to 'Art Consumer' %></p>

@@ -11,7 +11,7 @@ class EventsController < ApplicationController
       when "art"   then fs.top50("nyc", "arts")
       else fs.top50
       end
-    @venue = @venues.shuffle.take(1)
+    @venue = @venues.shuffle.first
   end
 
 end

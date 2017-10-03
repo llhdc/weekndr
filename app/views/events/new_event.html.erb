@@ -1,2 +1,11 @@
-<p><%= @night.to_json %></p>
-<p>Find me in app/views/events/create.html.erb</p>
+<p><%= @venue.name  %></p>
+<p><%= @venue.location["formattedAddress"][0] %></p>
+<p><%= @venue.location["formattedAddress"][1] %></p>
+<p>Rating: <%= @venue.rating %></p>
+<% if @venue.price %>
+  <% cost = "$" * @venue.price["tier"] %>
+  <p>Cost: <%= cost %></p>
+<% end %>
+<% if @venue.photourl %>
+  <%= image_tag @venue.photourl %>
+<% end %>
