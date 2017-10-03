@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ header {
+  color: white;
+  background-image: url(https://source.unsplash.com/collection/135653);
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
