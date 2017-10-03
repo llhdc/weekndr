@@ -1,9 +1,11 @@
-<h3>Lookin' for somethin' to do?</h3>
+<h2>Lookin' for somethin' to do?</h2>
 
-<% party = ["Wildin' Out", "Hang Out Yo", "Party Starter"] %>
-<% eat = ["Hunger Slayer", "Eat Some Food"] %>
+<% party = ["Wildin' Out", "Bottoms Up!", "Party Starter", "Drink, please", "It's been a tough week"] %>
+<% eat = ["Hunger Slayer", "Nom", "Chow", "Munch", "Taste", "Eat Some Food"] %>
+<% art = ["Art Connoisseur", "Artsy Fartsy are we?", "Sophistikultur"] %>
 
-<p><%= link_to party.shuffle.first, event_path(:type => "night") %></p>
-<p><%= link_to eat.shuffle.first %></p>
-<p><%= link_to 'Tourist' %></p>
-<p><%= link_to 'Art Consumer' %></p>
+<h3><%= link_to party.shuffle.first, event_path(:type => "night") %></h3>
+<h3><%= link_to eat.shuffle.first, event_path(:type => "food") %></h3>
+<h3><%= link_to art.shuffle.first, event_path(:type => "art") %></h3>
+
+<h3><%= link_to "Decision Making is Hard", event_path(:type => "null")  %></h3>
