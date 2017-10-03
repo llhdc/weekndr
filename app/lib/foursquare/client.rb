@@ -30,7 +30,7 @@ module Foursquare
       )
     end
 
-    def explore(city:, limit: 20, section: nil)
+    def explore(city: "nyc", limit: 50, section: nil)
       response = get_explore(city: city, limit: limit, section: section)
       response_to_venues(response)
     end

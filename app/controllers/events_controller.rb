@@ -2,17 +2,16 @@ class EventsController < ApplicationController
   def show
   end
 
-  def new
-  end
-
-  def create
-  end
-
-  def event
+  def new_event
     fs = Foursquare::Client.new
-    @night = fs.top50("nyc," "nightlife")
-    @eat = fs.top50("nyc", "food")
-    @art = fs.top50("nyc", "arts")
+    @venues =
+      case params[:type]
+      when "night" then fs.top50("nyc", "nightlife")
+      when "food"  then fs.top50("nyc", "food")
+      when "art"   then fs.top50("nyc", "arts")
+      else fs.top50
+      end
+    @venue = @venues.shuffle.take(1)
   end
-  
+
 end
