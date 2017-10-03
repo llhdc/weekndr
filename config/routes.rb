@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'events/show'
+  root 'events#show'
 
   get 'events/new'
 

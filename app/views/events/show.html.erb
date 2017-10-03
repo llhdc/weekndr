@@ -1,2 +1,9 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<h3>Lookin' for somethin' to do?</h3>
+
+<% party = ["Wildin' Out", "Hang Out Yo", "Party Starter"] %>
+<% eat = ["Hunger Slayer", "Eat Some Food"] %>
+
+<p><%= link_to party.shuffle.first %></p>
+<p><%= link_to eat.shuffle.first %></p>
+<p><%= link_to 'Tourist' %></p>
+<p><%= link_to 'Art Consumer' %></p>
