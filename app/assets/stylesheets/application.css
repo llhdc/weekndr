@@ -26,7 +26,7 @@ header {
 }
 
 .option {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .option:hover {
@@ -76,10 +76,11 @@ header {
 .span-text {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .span-text:hover{
-  padding: 4px;
+  padding: 10px;
   background-color: white;
   color: black;
   text-shadow: none;
