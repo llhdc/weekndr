@@ -73,7 +73,7 @@ header {
   background-size: cover;
 }
 
-.span-text {
+.span-text, a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
