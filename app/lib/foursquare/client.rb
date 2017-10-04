@@ -10,7 +10,7 @@ module Foursquare
     def response_to_venues(response)
       response["response"]["groups"][0]["items"].map do |item|
         venue = Venue.new
-        venue.fid = item["venue"]["id"]
+        venue.id = item["venue"]["id"]
         venue.name = item["venue"]["name"]
         venue.location = item["venue"]["location"]
         venue.rating = item["venue"]["rating"]

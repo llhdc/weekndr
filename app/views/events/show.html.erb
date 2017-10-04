@@ -3,12 +3,12 @@
 </header>
 
 <section class="banner">
-  <span>Lookin' for somethin' to do? What are you in the mood for?: </span>
+  <span><strong>No weekend plans? Let's fix that. What're you up for?</strong></span>
 </section>
 
-<% party = ["Drink", "Bottoms Up!", "Get this party started", "Drink, please", "It's been a tough week, okay"] %>
-<% eat = ["Stuff my face", "Nom", "Chow", "Munch", "Taste", "Eat Some Food"] %>
-<% art = ["Water my soul", "Something artsy", "Something fancy"] %>
+<% party = ["Bottoms Up!", "Booze", "Drinks, please", "It's been a tough week, okay"] %>
+<% eat = ["Grub", "Nom", "Chow", "Munch", "Taste", "Eat"] %>
+<% art = ["Food for the soul", "Something artsy", "Something fancy"] %>
 
 <section class="option" id="option-1">
   <span><%= link_to party.shuffle.first, event_path(:type => "night"), class: "span-text" %></span>
@@ -23,5 +23,5 @@
 </section>
 
 <section class="option" id="option-4">
-  <span><%= link_to "Not making another f*%k!ng decision", event_path(:type => "null"), class: "span-text" %></span>
+  <span><%= link_to "Gimme anything", event_path(:type => "null"), class: "span-text" %></span>
 </section>

@@ -1,3 +1,7 @@
+html {
+  font-family: sans-serif;
+}
+
 header {
   color: white;
   background: url(https://source.unsplash.com/collection/135653) no-repeat;
@@ -14,7 +18,18 @@ header {
 
 .banner {
   background: url("https://source.unsplash.com/collection/251966") no-repeat center fixed;
-  background-size: cover
+  background-size: cover;
+}
+.banner span {
+  background-color: black;
+}
+
+.option {
+  opacity: 0.8;
+}
+
+.option:hover {
+  opacity: 1.0;
 }
 
 .option, .banner {
@@ -24,7 +39,7 @@ header {
   text-align: center;
   height: 200px;
   width: 100%;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 200px;
   color: white;
 }
