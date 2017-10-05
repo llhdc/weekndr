@@ -1,13 +1,16 @@
 <header>
   <span>The WEEKNDR</span>
+  <br>
+  <span id="tag-line"><%= link_to "Let's fix that >>>", event_path, class: "span-text" %></span>
+  <p><span><strong>No weekend plans?</strong></span></p>
 </header>
 
 <section class="banner">
-  <span><strong>No weekend plans? Let's fix that. What're you up for?</strong></span>
+  <span> ⇩ How about some options? ⇩ </span>
 </section>
 
 <% party = ["Bottoms Up!", "Booze", "Drinks, please", "It's been a tough week, okay"] %>
-<% eat = ["Grub", "Nom", "Chow", "Munch", "Taste", "Eat"] %>
+<% eat = ["Grub", "Chow", "Munch", "Taste", "Eat"] %>
 <% art = ["Food for the soul", "Something artsy", "Something fancy"] %>
 
 <a href="/event?type=night"><section class="option" id="option-1">

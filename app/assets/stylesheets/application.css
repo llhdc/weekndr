@@ -1,5 +1,9 @@
 html {
+  box-sizing: border-box;
   font-family: sans-serif;
+  margin: 0 -10px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 header {
@@ -8,25 +12,46 @@ header {
   height: 500px;
   width: 100%;
   background-size: cover;
-  text-align: center;
-  line-height: 500px;
-  font-size: 100px;
   margin: 10px;
   padding: 0;
  }
 
+ header span {
+   font-size: 45px;
+   position: relative;
+   top: 0px;
+   left: 5px;
+   font-style: italic;
+ }
+
+ #tag-line {
+   position: relative;
+   top: 140px;
+   right: 100px;
+   font-size: 60px;
+   font-style: normal;
+   padding: 5px;
+ }
+
+#down {
+  position: relative;
+  top: 232px;
+  left: auto;
+  font-style: none;
+  text-align: center;
+}
 
 .banner {
-  background: url("https://source.unsplash.com/collection/251966") no-repeat center fixed;
+  background: url("https://source.unsplash.com/collection/568015") no-repeat center fixed;
   background-size: cover;
 }
 .banner span {
   background-color: black;
-  padding: 10px;
+  padding: 15px;
 }
 
 .option {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .option:hover {
@@ -87,7 +112,8 @@ header {
 }
 
 .event {
-  font-size: 85px;
+  font-size: 70px;
+  margin-bottom: 15px;
   background-color: black;
   color: white;
 }
@@ -100,8 +126,7 @@ header {
 #event-bg {
   background: url("https://source.unsplash.com/collection/1002785") no-repeat fixed;
   background-size: cover;
-  margin: 0;
-  padding: 0;
+  margin-left: 10px;
   min-height: 100%;
   min-width: 100%;
   top: 0;
