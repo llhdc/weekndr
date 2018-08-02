@@ -16,7 +16,6 @@ module Foursquare
         venue.rating = item["venue"]["rating"]
         venue.url = item["venue"]["url"]
         venue.hours = item["venue"]["url"]
-        venue.photourl = item["tips"][0]["photourl"]
         venue.price = item["venue"]["price"]
         venue
       end
